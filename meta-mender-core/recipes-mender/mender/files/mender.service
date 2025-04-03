@@ -9,7 +9,7 @@ Group=root
 ExecStartPre=/bin/mkdir -p -m 0700 /data/mender
 ExecStartPre=/bin/ln -sf /etc/mender/tenant.conf /var/lib/mender/authtentoken
 ExecStart=/usr/bin/mender -daemon
-Restart=on-abort
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
