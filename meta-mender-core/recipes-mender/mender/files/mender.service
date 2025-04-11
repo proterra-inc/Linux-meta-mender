@@ -1,6 +1,6 @@
 [Unit]
 Description=Mender OTA update service
-After=systemd-resolved.service
+After=systemd-resolved.service modem-init.service
 
 [Service]
 Type=idle
